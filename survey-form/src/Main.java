@@ -1,17 +1,12 @@
 import javax.swing.*;
 import packages.informationPage;
-
 import java.awt.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Font customFont = new Font("Arial", Font.BOLD, 18);
         // Create and configure the main frame
-
-        JFrame frame = new JFrame("Survey form");
-        frame.setFont(customFont);
-
+        JFrame frame = new JFrame("فرم نظرسنجی");
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,23 +14,22 @@ public class Main {
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
+
 
         // Create title label
-        JLabel title = new JLabel("Survey Form");
-        title.setBounds(10, 10, 100, 20);
-        title.setFont(customFont);
+        JLabel title = new JLabel("فرم نظرسنجی");
+        title.setHorizontalAlignment(JLabel.CENTER);
+        panel.add(title, BorderLayout.NORTH);
 
         // Create start button
-        JButton startButton = new JButton("Start!");
-        startButton.setFont(customFont);
+        JButton startButton = new JButton("شروع!");
+        startButton.setHorizontalAlignment(JButton.CENTER);
+        panel.add(startButton, BorderLayout.CENTER);
 
-        startButton.setBounds(10, 40, 100, 20);
 
-        // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
 
         // Add panel to the frame
         frame.add(panel);

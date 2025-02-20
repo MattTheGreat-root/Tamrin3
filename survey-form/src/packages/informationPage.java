@@ -1,5 +1,5 @@
 package packages;
-
+import java.awt.*;
 import javax.swing.*;
 
 public class informationPage {
@@ -8,38 +8,46 @@ public class informationPage {
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
+        panel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panel.add(Box.createRigidArea(new Dimension(10, 20)));
+
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("اسم");
-        nameLabel.setBounds(10, 10, 100, 20);
+        nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         JTextField nameField = new JTextField(15);
-        nameField.setBounds(50, 10, 100, 20);
+        nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("سن");
-        ageLabel.setBounds(10, 50, 100, 20);
+        ageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         JTextField ageField = new JTextField(15);
-        ageField.setBounds(50, 50, 100, 20);
+        ageField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("ایمیل");
-        emailLabel.setBounds(10, 90, 100, 20);
+        emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         JTextField emailField = new JTextField(15);
-        emailField.setBounds(50, 90, 100, 20);
+        emailField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
-        levelLabel.setBounds(10, 130, 250, 20);
+        levelLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        levelLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JRadioButton level1 = new JRadioButton("مبتدی");
-        level1.setBounds(10, 160, 100, 20);
+        level1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton level2 = new JRadioButton("متوسط");
-        level2.setBounds(100, 160, 100, 20);
+        level2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton level3 = new JRadioButton("پیشرفته");
-        level3.setBounds(190, 160, 100, 20);
+        level3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton level4 = new JRadioButton("بدون آشنایی");
-        level4.setBounds(280, 160, 150, 20);
+        level4.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -50,7 +58,7 @@ public class informationPage {
 
         // Next Page Button
         JButton nextButton = new JButton("صفحه بعد");
-        nextButton.setBounds(10, 200, 100, 20);
+        nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
