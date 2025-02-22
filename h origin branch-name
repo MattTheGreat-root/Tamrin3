@@ -1,0 +1,48 @@
+[33mcommit 4fe0369821dfd3273bbf81f459dfa32a5ece7b4f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mchange-theme[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: a6a83eb 6616639
+Author: Matin Tavakoli <110733183+MattTheGreat-root@users.noreply.github.com>
+Date:   Fri Feb 21 19:22:11 2025 +0330
+
+    Merge pull request #2 from MattTheGreat-root/font
+    
+    Font
+
+[33mcommit 6616639d734c923c89048a16b3e7425441e735b1[m[33m ([m[1;31morigin/font[m[33m)[m
+Merge: 54fcf0c a6a83eb
+Author: Matin Tavakoli <110733183+MattTheGreat-root@users.noreply.github.com>
+Date:   Fri Feb 21 19:21:07 2025 +0330
+
+    Merge branch 'main' into font
+
+[33mcommit a6a83eb5cbc9505f1cad12060e2c333428a84d08[m
+Merge: 2680294 b7179ad
+Author: Matin Tavakoli <110733183+MattTheGreat-root@users.noreply.github.com>
+Date:   Fri Feb 21 19:11:41 2025 +0330
+
+    Merge pull request #1 from MattTheGreat-root/english
+    
+    English
+
+[33mcommit 54fcf0ca8a3d76d6c79cd3a1661429f81256660b[m
+Author: Matin <i.e.matt.tavakoli@gmail.com>
+Date:   Fri Feb 21 18:22:56 2025 +0330
+
+    arial font
+
+[33mcommit b7179ad4ae105accb198b363036dea146a5c0498[m[33m ([m[1;31morigin/english[m[33m)[m
+Author: Matin <i.e.matt.tavakoli@gmail.com>
+Date:   Fri Feb 21 18:11:39 2025 +0330
+
+    panels are now in english
+
+[33mcommit 9f71c58abf1a3ffa0e9ee599c1fad50825fc226f[m
+Author: Matin <i.e.matt.tavakoli@gmail.com>
+Date:   Fri Feb 21 18:09:08 2025 +0330
+
+    first commit
+
+[33mcommit 2680294f6386d2d31233d9616247a7233bf50422[m
+Author: Matin <110733183+MattTheGreat-root@users.noreply.github.com>
+Date:   Thu Feb 20 18:48:22 2025 +0330
+
+    Initial commit
