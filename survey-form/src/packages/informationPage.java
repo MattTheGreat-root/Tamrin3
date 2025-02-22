@@ -1,6 +1,7 @@
 package packages;
 import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
@@ -15,39 +16,55 @@ public class informationPage {
 
 
         // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
+
+        Font customFont = new Font("Arial", Font.BOLD, 18);
+        JLabel nameLabel = new JLabel("name");
+        nameLabel.setFont(customFont);
         nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
         nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JTextField nameField = new JTextField(15);
         nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
+
+        JLabel ageLabel = new JLabel("age");
+        ageLabel.setFont(customFont);
         ageLabel.setHorizontalAlignment(SwingConstants.CENTER);
         ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JTextField ageField = new JTextField(15);
         ageField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
+
+        JLabel emailLabel = new JLabel("email");
+        emailLabel.setFont(customFont);
         emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
         emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         JTextField emailField = new JTextField(15);
         emailField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
+
+        JLabel levelLabel = new JLabel("Familiarity with similar software");
         levelLabel.setHorizontalAlignment(SwingConstants.CENTER);
         levelLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JRadioButton level1 = new JRadioButton("مبتدی");
+        JRadioButton level1 = new JRadioButton("beginner");
+        level1.setFont(customFont);
         level1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton level2 = new JRadioButton("متوسط");
+        JRadioButton level2 = new JRadioButton("intermediate");
+        level2.setFont(customFont);
         level2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton level3 = new JRadioButton("پیشرفته");
+        JRadioButton level3 = new JRadioButton("advanced");
+        level3.setFont(customFont);
         level3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JRadioButton level4 = new JRadioButton("no familiarity");
+        level4.setFont(customFont);
         level4.setAlignmentX(Component.CENTER_ALIGNMENT);
+
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -57,8 +74,11 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("صفحه بعد");
+
+        JButton nextButton = new JButton("next page");
+        nextButton.setFont(customFont);
         nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

@@ -2,6 +2,7 @@ package packages;
 
 import javax.swing.*;
 import java.awt.*;
+
 public class thankYouPage {
 
     public void create(JFrame frame) {
@@ -13,7 +14,10 @@ public class thankYouPage {
         panel.setBackground(Color.YELLOW);
 
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+
+        Font customFont = new Font("Arial", Font.BOLD, 18);
+        JLabel thankYouLabel = new JLabel("Thank you for your cooperation!");
+        thankYouLabel.setFont(customFont);
         thankYouLabel.setHorizontalAlignment(SwingConstants.CENTER);
         thankYouLabel.setVerticalAlignment(SwingConstants.CENTER);
         thankYouLabel.setAlignmentX(Component.CENTER_ALIGNMENT);

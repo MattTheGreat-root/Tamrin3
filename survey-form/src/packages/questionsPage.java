@@ -1,6 +1,7 @@
 package packages;
 import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 public class questionsPage {
 
@@ -13,9 +14,14 @@ public class questionsPage {
         panel.add(Box.createRigidArea(new Dimension(10, 20)));
 
         // Question 1
-        JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
+
+        JLabel question1 = new JLabel("How do you like the user interface of this app?");
+        Font customFont = new Font("Arial", Font.BOLD, 18);
+        question1.setFont(customFont);
         question1.setHorizontalAlignment(SwingConstants.CENTER);
         question1.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+
         JRadioButton radio1_1 = new JRadioButton("۱");
         radio1_1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio1_2 = new JRadioButton("۲");
@@ -35,9 +41,12 @@ public class questionsPage {
         group1.add(radio1_5);
 
         // Question 2
-        JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
+
+        JLabel question2 = new JLabel("Is is easy for you to access this app?");
+        question2.setFont(customFont);
         question2.setHorizontalAlignment(SwingConstants.CENTER);
         question2.setAlignmentX(Component.CENTER_ALIGNMENT);
+
 
         JRadioButton radio2_1 = new JRadioButton("۱");
         radio2_1.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -59,19 +68,21 @@ public class questionsPage {
         group2.add(radio2_5);
 
         // Question 3
-        JLabel question3 = new JLabel("چقدر طراحی صفحات نرم افزار ساده و کاربرپسند است؟");
+
+        JLabel question3 = new JLabel("How easy is it to design the pages?");
+        question3.setFont(customFont);
         question3.setHorizontalAlignment(SwingConstants.CENTER);
         question3.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JRadioButton radio3_1 = new JRadioButton("۱");
+        JRadioButton radio3_1 = new JRadioButton("1");
         radio3_1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio3_2 = new JRadioButton("۲");
+        JRadioButton radio3_2 = new JRadioButton("2");
         radio3_2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio3_3 = new JRadioButton("۳");
+        JRadioButton radio3_3 = new JRadioButton("3");
         radio3_3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio3_4 = new JRadioButton("۴");
+        JRadioButton radio3_4 = new JRadioButton("4");
         radio3_4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio3_5 = new JRadioButton("۵");
+        JRadioButton radio3_5 = new JRadioButton("5");
         radio3_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group3 = new ButtonGroup();
@@ -82,7 +93,9 @@ public class questionsPage {
         group3.add(radio3_5);
 
         // Question 4
-        JLabel question4 = new JLabel("آیا رنگ ها و فونت های استفاده شده در نرم افزار مناسب هستند؟");
+
+        JLabel question4 = new JLabel("Are the colors and the fonts appropriate?");
+        question4.setFont(customFont);
         question4.setHorizontalAlignment(SwingConstants.CENTER);
         question4.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -105,8 +118,11 @@ public class questionsPage {
         group4.add(radio4_5);
 
         // Next button to go to Page3
-        JButton nextButton = new JButton("صفحه بعد");
+
+        JButton nextButton = new JButton("next page");
+        nextButton.setFont(customFont);
         nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         nextButton.addActionListener(e -> {
             frame.remove(panel);
             frame.revalidate();
