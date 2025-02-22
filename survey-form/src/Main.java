@@ -9,7 +9,7 @@ public class Main {
         Font customFont = new Font("Arial", Font.BOLD, 14);
         JFrame frame = new JFrame("Survey form!");
         frame.setFont(customFont);
-        frame.setSize(600, 600);
+        frame.setSize(600, 700);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
