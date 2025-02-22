@@ -17,7 +17,7 @@ public class informationPage {
 
         // Name Label and Text Field
 
-        Font customFont = new Font("Arial", Font.BOLD, 18);
+        Font customFont = new Font("Arial", Font.BOLD, 14);
         JLabel nameLabel = new JLabel("name");
         nameLabel.setFont(customFont);
         nameLabel.setHorizontalAlignment(SwingConstants.CENTER);

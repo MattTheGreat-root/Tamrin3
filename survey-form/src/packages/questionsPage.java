@@ -16,21 +16,21 @@ public class questionsPage {
         // Question 1
 
         JLabel question1 = new JLabel("How do you like the user interface of this app?");
-        Font customFont = new Font("Arial", Font.BOLD, 18);
+        Font customFont = new Font("Arial", Font.BOLD, 14);
         question1.setFont(customFont);
         question1.setHorizontalAlignment(SwingConstants.CENTER);
         question1.setAlignmentX(Component.CENTER_ALIGNMENT);
 
 
-        JRadioButton radio1_1 = new JRadioButton("۱");
+        JRadioButton radio1_1 = new JRadioButton("1");
         radio1_1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio1_2 = new JRadioButton("۲");
+        JRadioButton radio1_2 = new JRadioButton("2");
         radio1_2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio1_3 = new JRadioButton("۳");
+        JRadioButton radio1_3 = new JRadioButton("3");
         radio1_3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio1_4 = new JRadioButton("۴");
+        JRadioButton radio1_4 = new JRadioButton("4");
         radio1_4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio1_5 = new JRadioButton("۵");
+        JRadioButton radio1_5 = new JRadioButton("5");
         radio1_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group1 = new ButtonGroup();
@@ -48,15 +48,15 @@ public class questionsPage {
         question2.setAlignmentX(Component.CENTER_ALIGNMENT);
 
 
-        JRadioButton radio2_1 = new JRadioButton("۱");
+        JRadioButton radio2_1 = new JRadioButton("1");
         radio2_1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio2_2 = new JRadioButton("۲");
+        JRadioButton radio2_2 = new JRadioButton("2");
         radio2_2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio2_3 = new JRadioButton("۳");
+        JRadioButton radio2_3 = new JRadioButton("3");
         radio2_3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio2_4 = new JRadioButton("۴");
+        JRadioButton radio2_4 = new JRadioButton("4");
         radio2_4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio2_5 = new JRadioButton("۵");
+        JRadioButton radio2_5 = new JRadioButton("5");
         radio2_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
 
@@ -99,15 +99,15 @@ public class questionsPage {
         question4.setHorizontalAlignment(SwingConstants.CENTER);
         question4.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JRadioButton radio4_1 = new JRadioButton("۱");
+        JRadioButton radio4_1 = new JRadioButton("1");
         radio4_1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio4_2 = new JRadioButton("۲");
+        JRadioButton radio4_2 = new JRadioButton("2");
         radio4_2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio4_3 = new JRadioButton("۳");
+        JRadioButton radio4_3 = new JRadioButton("3");
         radio4_3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio4_4 = new JRadioButton("۴");
+        JRadioButton radio4_4 = new JRadioButton("4");
         radio4_4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JRadioButton radio4_5 = new JRadioButton("۵");
+        JRadioButton radio4_5 = new JRadioButton("5");
         radio4_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group4 = new ButtonGroup();
