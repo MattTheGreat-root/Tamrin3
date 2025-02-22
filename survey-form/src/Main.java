@@ -6,12 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
         // Create and configure the main frame
-        JFrame frame = new JFrame("فرم نظرسنجی");
+        Font customFont = new Font("Arial", Font.BOLD, 14);
+        JFrame frame = new JFrame("Survey form!");
+        frame.setFont(customFont);
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
-
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
@@ -20,12 +21,14 @@ public class Main {
 
 
         // Create title label
-        JLabel title = new JLabel("فرم نظرسنجی");
+        JLabel title = new JLabel("Survey Form");
+        title.setFont(customFont);
         title.setHorizontalAlignment(JLabel.CENTER);
         panel.add(title, BorderLayout.NORTH);
 
         // Create start button
-        JButton startButton = new JButton("شروع!");
+        JButton startButton = new JButton("Start!");
+        startButton.setFont(customFont);
         startButton.setHorizontalAlignment(JButton.CENTER);
         panel.add(startButton, BorderLayout.CENTER);
 

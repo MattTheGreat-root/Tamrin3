@@ -15,7 +15,7 @@ public class thankYouPage {
 
         // Create thank you label
 
-        Font customFont = new Font("Arial", Font.BOLD, 18);
+        Font customFont = new Font("Arial", Font.BOLD, 14);
         JLabel thankYouLabel = new JLabel("Thank you for your cooperation!");
         thankYouLabel.setFont(customFont);
         thankYouLabel.setHorizontalAlignment(SwingConstants.CENTER);
